@@ -1,4 +1,4 @@
-#ihmc\_valkyrie
+#ihmc\_valkyrie\_ros
 
 The `ihmc_valkyrie_ros` package allows for integrating the IHMC ROS API and the NASA Johnson Space Center Valkyrie humanoid in simulation and on real robot hardware.
 
