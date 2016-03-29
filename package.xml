@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>ihmc_valkyrie</name>
+  <name>ihmc_valkyrie_ros</name>
   <version>0.3.2</version>
-  <description>The ihmc_valkyrie package allows for using the IHMC control algorithm and ROS API with the NASA Johnson Space Center Valkyrie robot</description>
+  <description>The ihmc_valkyrie_ros package allows for using the IHMC control algorithm and ROS API with the NASA Johnson Space Center Valkyrie robot</description>
 
   <maintainer email="dstephen@ihmc.us">Doug Stephen</maintainer>
 

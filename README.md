@@ -1,6 +1,6 @@
 #ihmc\_valkyrie
 
-The `ihmc_valkyrie` package allows for integrating the IHMC ROS API and the NASA Johnson Space Center Valkyrie humanoid in simulation and on real robot hardware.
+The `ihmc_valkyrie_ros` package allows for integrating the IHMC ROS API and the NASA Johnson Space Center Valkyrie humanoid in simulation and on real robot hardware.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ This software can also be used with a local build of IHMC Open Robotics Software
 
 ##Usage
 
-`ihmc_valkyrie` provides the following launch files:
+`ihmc_valkyrie_ros` provides the following launch files:
 
 - `ihmc_valkyrie_scs.launch`: Launch an IHMC SCS simulation environment
 - `valkyrie_open_humanoids_scs.launch`: Launches an IHMC SCS simulation environment designed as part of the MIT/University of Edinburgh Open Humanoids Project
