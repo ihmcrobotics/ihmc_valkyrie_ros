@@ -4,4 +4,4 @@ vmConfig:
   heapSize: 4g
   mainMethod: us.ihmc.valkyrie.OpenHumanoidsSimulator
 dependencies:
-- us.ihmc:Valkyrie:0.7.5
+- us.ihmc:Valkyrie:0.7.8
