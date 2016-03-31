@@ -6,7 +6,7 @@ The `ihmc_valkyrie_ros` package allows for integrating the IHMC ROS API and the 
 
 This package provides several launch scripts. By default, they all use the latest stable release of IHMC Open Robotics Software as provided on JCenter/Bintray.
 
-This software can also be used with a local build of IHMC Open Robotics Software. For more information, see [the GitHub Pages documentation](TODO fill this in)
+This software can also be used with a local build of IHMC Open Robotics Software. For more information, see [the IHMC ROS Java Adapter](https://github.com/ihmcrobotics/ihmc_ros_core/tree/develop/ihmc_ros_java_adapter).
 
 ##Usage
 
