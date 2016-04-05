@@ -19,6 +19,45 @@ This software can also be used with a local build of IHMC Open Robotics Software
 - `val_wholebody_control_gazebo.launch`: Launches the `ihmc_ros_control` based controller for use with simulations from the `val_gazebo` package
 - `val_wholebody_control_robot.launch`: Launches the `ihmc_ros_control` based controller for use with the physical Valkyrie robot
 
+### Using val_wholebody_control_\* launch files
+
+Some configuration must be done to use the IHMC whole-body control algorithm in the Valkyrie package. At the time of this writing, the whole-body control launch files are not integrated with Bintray or the `ihmc_ros_java_adapter`. You will need to do the following on the computer where the controller will be run:
+
+- Configuring security limits for starting realtime threads. Edit `/etc/security/limits.conf` and add the following (replacing [username] with your local user name):
+```
+[username]       soft    cpu     unlimited
+[username]       -       rtprio  100
+[username]       -       nice    40
+[username]       -       memlock unlimited
+```
+
+- Set up your IHMC IP Addresses. See [The Network Parameters documentation](https://github.com/ihmcrobotics/ihmc_ros_core/blob/develop/ihmc_ros_common/IHMCNetworking.md) for more information. Note that the wholebody launchers ***do not*** currently use the config files in the `configurations` directory. They use a configuration common to the IHMC field deployments, which is `$HOME/.ihmc/IHMCNetworkParameters.ini`. You can also use environment variables as described in the documentation. The bare minimum you will need is a `logger`/`IHMC_LOGGER_IP` set.
+
+- You must have a local clone of [IHMC Open Robotics Software](https://github.com/ihmcrobotics/ihmc-open-robotics-software) and you must "deploy" to the computer that will be running the controller. This can be accomplished via Gradle tasks. For example, to deploy locally for usage w/ Gazebo you use the `deployLocal` task, and for pushing code on to a Valkyrie robot you can use the `deploy` task.
+
+Local deploy example:
+```bash
+$ cd <code clone location>
+$ ./gradlew :Valkyrie:deployLocal
+```
+
+For the physical robot `deploy` task, you will need to configure a few Gradle properties. Create/edit the file `$HOME/.gradle/gradle.properties` and set the following values:
+
+```properties
+#ip address of your Link computer
+valkyrie_link_ip=
+
+#ip address of your Zelda computer
+valkyrie_zelda_ip=
+
+#SSH username for the Valkyrie onboard computers:
+valkyrie_realtime_username=
+
+#SSH password for the Valkyrie onboard computers:
+valkyrie_realtime_password=
+```
+
+### Other launch files
 
 You can set the following roslaunch args:
 
