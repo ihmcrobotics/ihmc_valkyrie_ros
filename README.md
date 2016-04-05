@@ -41,7 +41,7 @@ $ cd <code clone location>
 $ ./gradlew :Valkyrie:deployLocal
 ```
 
-For the physical robot `deploy` task, you will need to configure a few Gradle properties. Create/edit the file `$HOME/.gradle/gradle.properties` and set the following values:
+For the physical robot `deploy` task (`./gradlew :Valkyrie:deploy`), you will need to configure a few Gradle properties. Create/edit the file `$HOME/.gradle/gradle.properties` and set the following values:
 
 ```properties
 #ip address of your Link computer
