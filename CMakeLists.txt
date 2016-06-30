@@ -3,6 +3,20 @@ project(ihmc_valkyrie_ros)
 
 find_package(catkin REQUIRED COMPONENTS
   ihmc_ros_common
+  ihmc_msgs
+  std_msgs
+  message_generation
+)
+
+add_message_files(
+  FILES
+  ValkyrieLowLevelControlModeRosMessage.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  ihmc_msgs
 )
 
 catkin_package(
