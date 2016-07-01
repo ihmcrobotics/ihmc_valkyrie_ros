@@ -5,6 +5,7 @@ find_package(catkin REQUIRED COMPONENTS
   ihmc_ros_common
   ihmc_msgs
   std_msgs
+  geometry_msgs
   message_generation
 )
 
