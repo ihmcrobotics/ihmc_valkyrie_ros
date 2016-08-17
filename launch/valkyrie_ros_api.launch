@@ -11,6 +11,6 @@
 
   <include file="$(find ihmc_valkyrie_ros)/launch/common/ihmc_valkyrie_params_common.launch" />
 
-  <node name="IHMCValkyrieROSAPI" pkg="ihmc_ros_java_adapter" type="gradlew" args="runJava -Dus.ihmc.networkParameterFile=$(arg ihmc_network_file) -PuseLocal=$(arg use_local_build) -Pyaml=$(find ihmc_valkyrie_ros)/configurations/api.yaml, -PprogramArgs=--realRobot" required="true" output="screen" cwd="node">
+  <node name="IHMCValkyrieROSAPI" pkg="ihmc_ros_java_adapter" type="gradlew" args="runJava -Dus.ihmc.networkParameterFile=$(arg ihmc_network_file) -PuseLocal=$(arg use_local_build) -Pyaml=$(find ihmc_valkyrie_ros)/configurations/api.yaml -PprogramArgs=--realRobot" required="true" output="screen" cwd="node">
   </node>
 </launch>
