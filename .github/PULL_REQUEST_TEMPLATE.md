@@ -6,4 +6,3 @@ prior to merging, and passes after merging.
 <!-- If this pull request resolves any open issues, provide a link: -->
 Resolves [issue#](https://github.com/ihmcrobotics/ihmc_valkyrie_ros/issues).
 
-Make sure code is formatted with the relevant template(s) at IHMCJavaToolkit/CodeFormatTemplates.

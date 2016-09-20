@@ -1,7 +1,6 @@
 | Required Info ||
 |---|---|
 |Operating System||
-|JDK||
 |ROS Version||
 
 ####Steps to reproduce issue
