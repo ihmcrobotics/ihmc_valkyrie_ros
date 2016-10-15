@@ -1,0 +1,7 @@
+!ihmc_ros_java_adapter
+programArgs: []
+vmConfig:
+  heapSize: 4g
+  mainMethod: us.ihmc.valkyrie.ValkyrieROSNetworkProcessor
+dependencies:
+- us.ihmc:Valkyrie:0.8.0

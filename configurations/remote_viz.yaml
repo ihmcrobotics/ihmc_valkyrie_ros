@@ -1,0 +1,7 @@
+!ihmc_ros_java_adapter
+programArgs: []
+vmConfig:
+  heapSize: null
+  mainMethod: us.ihmc.valkyrie.visualizer.RemoteValkyrieVisualizer
+dependencies:
+- us.ihmc:Valkyrie:0.8.0

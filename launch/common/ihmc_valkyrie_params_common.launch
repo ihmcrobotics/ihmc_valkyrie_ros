@@ -1,0 +1,12 @@
+<launch>
+  <param name="/ihmc_ros/valkyrie/right_foot_frame_name" value="rightFoot" type="string" />
+  <param name="/ihmc_ros/valkyrie/left_foot_frame_name" value="leftFoot" type="string" />
+
+  <rosparam param="/ihmc_ros/valkyrie/right_arm_joint_names">
+    ['rightShoulderPitch', 'rightShoulderRoll', 'rightShoulderYaw', 'rightElbowPitch', 'rightForearmYaw', 'rightWristRoll', 'rightWristPitch']
+  </rosparam>
+
+  <rosparam param="/ihmc_ros/valkyrie/left_arm_joint_names">
+    ['leftShoulderPitch', 'leftShoulderRoll', 'leftShoulderYaw', 'leftElbowPitch', 'leftForearmYaw', 'leftWristRoll', 'leftWristPitch']
+  </rosparam>
+</launch>

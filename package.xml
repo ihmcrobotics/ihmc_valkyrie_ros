@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>ihmc_valkyrie_ros</name>
+  <version>0.3.2</version>
+  <description>The ihmc_valkyrie_ros package allows for using the IHMC control algorithm and ROS API with the NASA Johnson Space Center Valkyrie robot</description>
+
+  <maintainer email="dstephen@ihmc.us">Doug Stephen</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <url type="website">http://github.com/ihmcrobotics/ihmc_valkyrie_ros</url>
+
+  <author email="dstephen@ihmc.us">Doug Stephen</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>ihmc_ros_common</build_depend>
+  <build_depend>ihmc_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>ihmc_ros_common</run_depend>
+  <run_depend>ihmc_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>ihmc_ros_control</run_depend>
+  <run_depend>val_gazebo</run_depend>
+  <run_depend>val_description</run_depend>
+
+</package>

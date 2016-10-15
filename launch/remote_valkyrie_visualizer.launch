@@ -1,0 +1,7 @@
+<launch>
+  <arg name="ihmc_network_file" default="$(find ihmc_valkyrie_ros)/configurations/IHMCNetworkParameters.ini" />
+  <arg name="use_local_build" default="false" />
+
+  <node name="IHMCLogger" pkg="ihmc_ros_java_adapter" type="gradlew" args="runJava -Dus.ihmc.networkParameterFile=$(arg ihmc_network_file) -PuseLocal=$(arg use_local_build) -Pyaml=$(find ihmc_valkyrie_ros)/configurations/remote_viz.yaml" required="true" output="screen" cwd="node">
+  </node>
+</launch>

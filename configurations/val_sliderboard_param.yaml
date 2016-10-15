@@ -1,0 +1,10 @@
+joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+ihmc_valkyrie_control_java_bridge:
+    jvm_args: "-Djava.class.path=ValkyrieController.jar -XX:+UseSerialGC -Xmx10g -Xms10g -XX:NewSize=8g -XX:MaxNewSize=8g -XX:CompileThreshold=1000 -verbose:gc -Djava.library.path=lib/"
+    main_class: us.ihmc.valkyrieRosControl.ValkyrieRosControlSliderBoard
+    type: ihmc_ros_control/IHMCWholeRobotControlJavaBridge
+
+
