@@ -1,0 +1,6 @@
+<launch>
+  <arg name="use_local_build" default="false" />
+
+  <node name="IHMCValkyrieROSAPI" pkg="ihmc_ros_java_adapter" type="gradlew" args="warmUp -x runJavaDelegate -PuseLocal=$(arg use_local_build) -Pyaml=$(find ihmc_valkyrie_ros)/configurations/api.yaml" required="true" output="screen" cwd="node">
+  </node>
+</launch>
