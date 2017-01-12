@@ -4,4 +4,4 @@ vmConfig:
   heapSize: null
   mainMethod: us.ihmc.valkyrie.visualizer.RemoteValkyrieVisualizer
 dependencies:
-- us.ihmc:Valkyrie:0.8.0
+- us.ihmc:Valkyrie:0.8.2
