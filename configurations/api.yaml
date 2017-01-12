@@ -4,4 +4,4 @@ vmConfig:
   heapSize: 4g
   mainMethod: us.ihmc.valkyrie.ValkyrieROSNetworkProcessor
 dependencies:
-- us.ihmc:Valkyrie:0.8.0
+- us.ihmc:Valkyrie:0.8.2
