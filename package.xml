@@ -22,7 +22,6 @@
   <run_depend>ihmc_msgs</run_depend>
   <run_depend>std_msgs</run_depend>
   <run_depend>ihmc_ros_control</run_depend>
-  <run_depend>val_gazebo</run_depend>
   <run_depend>val_description</run_depend>
 
 </package>
